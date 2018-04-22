@@ -5,7 +5,7 @@
 @section('page-title','Band')
 
 @section('dashboard-content')
-    <a href="#" class="btn btn-primary">
+    <a href="{{ URL('band/create')}}" class="btn btn-primary">
         Tambah
     </a>
     <table class="table">
@@ -26,7 +26,8 @@
                 <a href="#" class="btn btn-success">
                     <i class="fa fa-pencil"></i>
                 </a>
-                <a href="#" class="btn btn-danger">
+				
+                <a href="" class="btn btn-danger">
                     <i class="fa fa-trash"></i>
                 </a>
             </td>

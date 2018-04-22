@@ -79,8 +79,9 @@ class MusicController extends Controller
      * @param  \App\music  $music
      * @return \Illuminate\Http\Response
      */
-    public function destroy(music $music)
+    public function destroy($id)
     {
-        //
+        music::where('id', '=', $id)->delete();
+        return redirect('music');
     }
 }
