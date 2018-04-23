@@ -25,7 +25,7 @@ class BandController extends Controller
      */
     public function create()
     {
-        return view('band.create');
+       // 
     }
 
     /**
@@ -36,14 +36,7 @@ class BandController extends Controller
      */
     public function store(Request $request)
     {
-		$data=[
-			'name' => $request -> Name,
-			'vocalist' => $request -> Vocalist,
-			'genre' => $request -> Genre,
-			'since' => $request -> Since,
-		];
-		band::insert($data);
-		return redirect ('band');
+		//
     }
 
     /**

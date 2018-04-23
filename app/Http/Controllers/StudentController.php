@@ -14,7 +14,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students=Student::all();
+        $students=student::all();
         return view('student.index',compact('students'));
     }
 
@@ -79,8 +79,9 @@ class StudentController extends Controller
      * @param  \App\student  $student
      * @return \Illuminate\Http\Response
      */
-    public function destroy(student $student)
+    public function destroy($nim)
     {
-        //
+        student::where('nim', '=', $nim)->delete();
+        return redirect('student');
     }
 }

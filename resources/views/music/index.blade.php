@@ -26,13 +26,9 @@
                 <a href="#" class="btn btn-success">
                     <i class="fa fa-pencil"></i>
                 </a>
-                 <form action="{{URL('music/'.$music->id)}}" method="POST" >
-					{{ csrf_field() }}
-					{{ method_field('DELETE')}} 
-					<button type="Submit" class="btn btn-danger">
-						<i class="fa fa-trash"></i>	
-					</button>
-				</form>
+				<a href="#" class="btn btn-danger">
+                    <i class="fa fa-trash"></i>
+                </a>
             </td>
         </tr>
         @endforeach
